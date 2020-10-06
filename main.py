@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib import mlab
 
 import learning
+import test
 
 allData = pd.read_csv("master.csv")
 
@@ -68,7 +69,7 @@ for i in range(find_common_min(country), 2002):
     except:
         pass
 
-z = learning.Learn(common_year_index, year_deaths, 0, 0, 1)
+z = test.LearnTest(common_year_index, year_deaths, np.array([[0], [0]]), 1)
 
 # contour plot
 zoom = 1
@@ -79,22 +80,25 @@ y_space = np.linspace(-10 * zoom, 10 * zoom, 1000)
 x, y = np.meshgrid(x_space, y_space)
 ax.contour(x, y, z.get_cost(x, y), levels=np.arange(-16000, 16000, 300))
 
-z.theta_0 = 75
-z.theta_1 = -7.5
-z.alpha = 0.01
+# Initial hypothesis
+hyp = np.array([[-7.5],
+                [75]])
+z.hypothesis = hyp
+
+z.alpha = 0.01  # Alpha value
 theta_0 = []
 theta_1 = []
-for i in range(5000):
-    theta_0.append(z.theta_0)
-    theta_1.append(z.theta_1)
+
+for i in range(4000):
+    theta_1.append(z.hypothesis[0][0])
+    theta_0.append(z.hypothesis[1][0])
     z.adjust_by_gradient()
     i += 1
-print(theta_0[len(theta_0) - 1])
-print(theta_1[len(theta_1) - 1])
+
 plt.scatter(theta_0, theta_1)
-
+plt.xlabel('x-intercept')
+plt.ylabel('slope')
 plt.show()
-
 
 # scatter plot
 x = np.linspace(0, 20, 100)
@@ -102,6 +106,3 @@ y = theta_1[len(theta_1) - 1] * x + theta_0[len(theta_0) - 1]
 plt.plot(x, y)
 plt.scatter(common_year_index, year_deaths)
 plt.show()
-
-
-

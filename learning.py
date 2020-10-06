@@ -1,4 +1,6 @@
-import numpy as np
+# This class uses simple lists to do calculations.
+# In fact, it's so simple that it's painfully slow.
+# Go to test.py for a faster experience.
 
 
 def get_hyp(x, theta_0, theta_1):
@@ -24,6 +26,7 @@ class Learn:
         for data in self.data_set_x:
             j += ((get_hyp(data, theta_0, theta_1) - self.data_set_y[i]) ** 2) * (1 / (len(self.data_set_x) * 2))
             i += 1
+
         return j
 
     def adjust_by_gradient(self):
