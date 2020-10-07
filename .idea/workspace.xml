@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93aa3c4-b9ad-4260-baef-67f171e73c76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +59,9 @@
       <module name="Linear Regression" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\Hasith\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -147,6 +146,7 @@
       <workItem from="1601574516572" duration="1937000" />
       <workItem from="1601576863944" duration="2382000" />
       <workItem from="1601921032134" duration="5584000" />
+      <workItem from="1601998514560" duration="476000" />
     </task>
     <servers />
   </component>
@@ -206,10 +206,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="968" height="548" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1598629171092" />
-    <state x="656" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1601921048016">
+    <state x="656" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1602086182227">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="365" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601921048016" />
+    <state x="656" y="365" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602086182227" />
     <state x="0" y="406" key="com.intellij.ide.util.TipDialog/0.0.600.1200@0.0.600.1200" timestamp="1597541511521" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1597714907955">
       <screen x="0" y="0" width="1920" height="1080" />
