@@ -1,7 +1,7 @@
 import numpy as np
 
 # This is the much faster class that uses numpy arrays for calculations.
-# Use this for reference, don't use learning.py
+# Use this for reference; don't use learning.py
 
 
 def get_hyp(x, theta_0, theta_1):
