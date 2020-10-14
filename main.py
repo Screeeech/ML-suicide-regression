@@ -70,8 +70,6 @@ country = get_country('United States')
 common_year_index = []
 year_deaths = []
 
-# Some data omitted due to readability of plots as well as overflow errors
-# Idea case scenario: 2002 can be replaced with find_common_max(country)
 for i in range(find_common_min(country), find_common_max(country)):
     common_year_index.append(i - find_common_min(country))
     # x axis as years since 1985
