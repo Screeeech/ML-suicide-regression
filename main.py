@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
-import learning
-import test
+import regression
 
 # Reads master.csv
 allData = pd.read_csv("master.csv")
@@ -79,7 +77,7 @@ for i in range(find_common_min(country), find_common_max(country)):
     except:
         pass
 
-z = test.LearnTest(common_year_index, year_deaths, np.array([[0], [0]]), 1)
+z = regression.Regression(common_year_index, year_deaths, np.array([[0], [0]]), 1)
 
 # contour plot
 zoom = 1

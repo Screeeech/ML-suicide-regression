@@ -1,14 +1,14 @@
 import numpy as np
 
 # This is the much faster class that uses numpy arrays for calculations.
-# Use this for reference; don't use learning.py
+# Use this for reference; don't use primaryTest.py
 
 
 def get_hyp(x, theta_0, theta_1):
     return theta_1 * x + theta_0
 
 
-class LearnTest:
+class Regression:
     def __init__(self, data_set_x, data_set_y, hypothesis, alpha):
         a = np.array([data_set_x]).T
         self.data_set_x = np.ones((len(data_set_x), 2))

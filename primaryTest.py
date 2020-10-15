@@ -1,6 +1,6 @@
 # This class uses simple lists to do calculations.
 # In fact, it's so simple that it's painfully slow.
-# Go to test.py for a faster experience.
+# Go to regression.py for a faster experience.
 
 
 def get_hyp(x, theta_0, theta_1):
